@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FEEDS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
+      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
+      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="https://img.freepik.com/free-vector/vintage-background-with-vinyl-record_260559-180.jpg?w=740&t=st=1649391296~exp=1649391896~hmac=225c00c92bafe15d3fbaa399e62322c31dd2b0287059d1b1536e2bcbc8c8d228" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="https://img.freepik.com/free-vector/vintage-background-with-vinyl-record_260559-180.jpg?w=740&t=st=1649391296~exp=1649391896~hmac=225c00c92bafe15d3fbaa399e62322c31dd2b0287059d1b1536e2bcbc8c8d228" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Music Club, THE MUSIC WORLD</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Coimbatore, Tamil Nadu</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 2, 2003</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>DancingRockstars<br>
+Violet Vocal<br>BachelorBand</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Event: An Musical Night<br>
+Venue: Coimbatore, BrookFields<br>
+Date: Apr 27, 2022.
+<br><br>
+Event: Concert Night<br>
+Venue: Chennai, Forum Mall<br>
+Date: Oct 28, Sat 2022.
+<br><br>
+Event: DJ and Concert/Party Night<br>
+Venue: Coimbatore, Prozone<br>
+Date: Nov 29, Sun 2022.</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="https://img.freepik.com/free-vector/new-year-christmas-music-party-event-flyer-poster-2022_460848-7558.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://papers.co/wallpaper/papers.co-nr21-party-club-dance-night-nature-music-25-wallpaper.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ov_NsxtRChPCTVIVCGfbdqKCCHusgT2mIA&usqp=CAU" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://i.pinimg.com/474x/3e/ae/48/3eae48c82aeecf01b60723f7d9df06a9.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://marketplace.canva.com/EAE4e9FoR1k/1/0/1131w/canva-black-party-night-club-dj-poster-sa1JjbN2nKs.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://previews.123rf.com/images/sofiartmedia/sofiartmedia1708/sofiartmedia170800008/83809264-%E3%83%80%E3%83%B3%E3%82%B9-%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E7%A5%AD%E5%A3%81%E7%B4%99%E3%80%81%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9-%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC%E3%80%81%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC-%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-%E3%83%A2%E3%83%80%E3%83%B3%E3%81%A7%E3%81%99%E3%80%82%E7%8F%BE%E4%BB%A3%E3%81%AE%E5%A5%B3%E6%80%A7%E3%83%80%E3%83%B3%E3%82%B5%E3%83%BC%E3%80%81%E8%89%B2%E3%81%A8%E3%82%8A%E3%81%A9%E3%82%8A%E3%81%AE%E3%82%B7%E3%83%AB%E3%82%A8%E3%83%83%E3%83%88%E3%80%81%E5%8B%95%E3%81%8D%E5%8B%95%E7%9A%84%E5%8A%B9%E6%9E%9C%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%A7%E3%82%AB%E3%83%90%E3%83%BC%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%E5%A5%B3%E3%81%AE%E5%AD%90%E3%81%AE%E3%83%80%E3%83%B3%E3%82%B9%E3%80%81%E6%B5%81%E8%A1%8C%E3%81%AB%E6%95%8F%E6%84%9F%E3%81%AA%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Music</span>
+            <span class="w3-tag w3-small w3-theme-d4">Dance</span>
+            <span class="w3-tag w3-small w3-theme-d3">Concert</span>
+            <span class="w3-tag w3-small w3-theme-d2">Instrument playing</span>
+            <span class="w3-tag w3-small w3-theme-d1">Vocal Music</span>
+            <span class="w3-tag w3-small w3-theme">Dance Class</span>
+            <span class="w3-tag w3-small w3-theme-l1">Musical Show</span>
+            <span class="w3-tag w3-small w3-theme-l2">DJ-ing</span>
+            <span class="w3-tag w3-small w3-theme-l3">Arts</span>
+            <span class="w3-tag w3-small w3-theme-l4">Passion on Music</span>
+            <span class="w3-tag w3-small w3-theme-l5">Events</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">THE MUSIC WORLD FEEDS</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Mtivated To Do Things!</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i> &nbsp;Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y29uY2VydHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>About Yesterday Night! <br>
+#Concert<br>
+#ConcertNight<br>
+#Singing<br>
+#Vibe</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="https://c0.wallpaperflare.com/preview/785/180/7/musician-sing-on-stage.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="https://wallpapercave.com/wp/wp4035875.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxuOrw7fUlj5Hsm1Ht9sjXmHBZGUyPUsLag&usqp=CAU" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Dance.. My Passion.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://c0.wallpaperflare.com/preview/765/880/834/people-man-singing-singer.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="data:image/jpeg;base64,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" style="width:100%" class="w3-margin-bottom">
+        <p>Vibed Well!.<br>
+#Concert<br>
+#ConcertNight<br>
+#Singing<br>
+#Vibe</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="https://papers.co/wallpaper/papers.co-nr21-party-club-dance-night-nature-music-25-wallpaper.jpg" style="width:100%" alt="Forest" style="width:100%;">
+          <p><strong>MUSIC CONCERT</strong></p>
+          <p> Apr 20, 2022 16:00PM</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+<div class="mySlides w3-display-container w3-center">
+            <img src="https://www.sagemusic.co/wp-content/uploads/2012/11/private-lessons-group-music-classes.png" style="width:100%"><div class="mySlides w3-display-container w3-center">
+       
+ 
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
